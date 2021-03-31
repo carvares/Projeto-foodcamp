@@ -12,34 +12,32 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .topo:first-child{
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 18px;
     padding-top: 8px ;
     padding-left: 21px;
 }
 .topo:first-child h1{
+    font-family: 'Righteous';
     font-size: 44px;
 }
-.fim{
-    width: 100%;
-    height: 92px;
-    background-color: #CF2B2B;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
 
-}
 .opcoes-pratos{
     overflow: hidden;
     display: flex;
 
 }
 .listapratos{
-    padding-left: 19px;
     padding-top: 123px;
-    width: 100%;
+}
 
+.listapratos, .listabebidas, .listasobremesas {
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    padding-left: 19px;
+    padding-bottom: 15px;
+    width: 100%;
 }
 .prato{
     width: 172px;
@@ -48,7 +46,7 @@
     background-color: #fff;
     border-radius: 9px;
     box-sizing: border-box;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 .conteudoprato{
     width: 144px;
@@ -58,6 +56,9 @@
     margin-right: auto;  
     box-sizing: border-box;
 
+}
+h3, h4, p {
+    font-family: 'Roboto', sans-serif;
 }
 h3{
     font-size: 16px;
@@ -75,4 +76,29 @@ p{
     font-size: 15px;
     font-weight: 300;
     margin-top: 10px;
+}
+.fim{
+    width: 100%;
+    height: 92px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+}
+.finalizar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 364px;
+    height: 61px;
+    background-color:#cbcbcb ;
+    color: #fff;
+    border-radius: 50px;
 }

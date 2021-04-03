@@ -39,6 +39,9 @@
     padding-bottom: 15px;
     width: 100%;
 }
+.listasobremesas{
+    padding-bottom: 110px;
+}
 .prato{
     min-width: 172px;
     height: 216px;
@@ -63,7 +66,8 @@
     width: 144px;
     height: 87px;
     border-radius: 4px;
-    background-size: cover;
+    overflow: hidden;
+    background-size:cover;
 }
 
 h3, h4, p {

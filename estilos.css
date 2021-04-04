@@ -1,5 +1,6 @@
 .body{
     background: #E5E5E5;
+    box-sizing: border-box;
 }
 .topo{
     width: 100%;
@@ -10,6 +11,7 @@
     right: 0px;
     left: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 3;
 }
 .topo:first-child{
     font-family: 'Roboto', sans-serif;
@@ -24,7 +26,7 @@
 }
 
 .opcoes-pratos, .opcoes-bebidas, .opcoes-sobremesas{
-    overflow: hidden;
+    overflow-x: scroll;
     display: flex;
 
 }
@@ -46,6 +48,7 @@
     min-width: 172px;
     height: 216px;
     background-color: #fff;
+    cursor: pointer;
     margin-top: 17px;
     margin-bottom: 27px;
     margin-left: 16px;
@@ -66,7 +69,7 @@
     width: 144px;
     height: 87px;
     border-radius: 4px;
-    background-size:cover;
+    object-fit: cover;
 }
 
 h3, h4, p {
@@ -101,19 +104,36 @@ p{
     display: flex;
     align-items: center;
     justify-self: center;
+    z-index: 3;
 
 }
-.finalizar{
+
+.finalizarcinza{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 87vw;
+    width: 88vw;
     height: 61px;
     background-color:#cbcbcb ;
     color: #fff;
     border-radius: 50px;
+}
+.finalizarverde{
+    font-weight: 700;
+    background-color: #32B72F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88vw;
+    height: 61px;
+    color: #fff;
+    border-radius: 50px;
+    display: none;
+
 }
 .bordaverdeprato{
     box-shadow: 0px 0px 0px 5px #32B72F;
@@ -132,5 +152,9 @@ p{
 }
 .mostrar{
     display: block;
+    display: flex;
 
+}
+.esconder{
+    display: none;
 }

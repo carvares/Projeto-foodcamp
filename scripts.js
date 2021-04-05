@@ -93,5 +93,4 @@ function mudarlink() {
     const textourl = encodeURI("Olá, gostaria de fazer o pedido:" + "\n" + "- " + "prato:  " + nomeprato + "\n" + "- " + "bebida:  " + nomebebida + "\n" + "- " + "sobremesa:  " + nomesobremesa + "\n" + "Valor final: " + " R$" + resultado);
     const mensagem = "https://wa.me/+5521967858482?" + "text=" + textourl;
     link.setAttribute('href', mensagem);
-    alert(mensagem);
 }

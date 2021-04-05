@@ -1,7 +1,10 @@
 let precoprato = 0;
 let precobebida = 0;
 let precosobremesa = 0;
-
+var nomeprato;
+var nomebebida;
+var nomesobremesa;
+var resultado;
 
 function selecionadoprato(escolha) {
     const listapratos = document.querySelector(".listapratos");
@@ -11,6 +14,7 @@ function selecionadoprato(escolha) {
     const qualtique = "icone" + escolha;
     const borda = document.querySelector("." + qualprato);
     const tique = document.querySelector("." + qualtique);
+    nomeprato = document.getElementById("nome" + escolha).innerText;
 
 
     if (selecaoprato !== null) {
@@ -20,6 +24,7 @@ function selecionadoprato(escolha) {
     precoprato = parseFloat(document.getElementById("preco" + escolha).innerText);
     borda.classList.add("bordaverdeprato");
     tique.classList.add("mostrar");
+
     fecharconta();
 
 }
@@ -30,6 +35,7 @@ function selecionadobebida(escolha) {
     const selecaoiconebebida = listabebidas.querySelector(".mostrar");
     const qualbebida = "bebida" + escolha;
     const qualtique = "." + "icone" + escolha;
+    nomebebida = document.getElementById("nome" + escolha).innerText;
 
     const borda = document.querySelector("." + qualbebida);
     const tique = document.querySelector(qualtique);
@@ -41,6 +47,7 @@ function selecionadobebida(escolha) {
     precobebida = parseFloat(document.getElementById("preco" + escolha).innerText);
     borda.classList.add("bordaverdebebida");
     tique.classList.add("mostrar");
+
     fecharconta();
 }
 
@@ -50,6 +57,7 @@ function selecionadosobremesa(escolha) {
     const selecaoiconesobremesa = listasobremesas.querySelector(".mostrar");
     const qualsobremesa = "sobremesa" + escolha;
     const qualtique = "." + "icone" + escolha;
+    nomesobremesa = document.getElementById("nome" + escolha).innerText;
 
     const borda = document.querySelector("." + qualsobremesa);
     const tique = document.querySelector(qualtique);
@@ -61,6 +69,7 @@ function selecionadosobremesa(escolha) {
     precosobremesa = parseFloat(document.getElementById("preco" + escolha).innerText);
     borda.classList.add("bordaverdesobremesa");
     tique.classList.add("mostrar");
+
     fecharconta();
 }
 function fecharconta() {
@@ -74,7 +83,15 @@ function fecharconta() {
     }
 
 }
-function pedir() {
-    const resultado = parseFloat(precoprato + precobebida + precosobremesa);
-    alert("R$:" + resultado.toFixed(2));
+
+
+
+
+function mudarlink() {
+    resultado = parseFloat(precoprato + precobebida + precosobremesa).toFixed(2);
+    const link = document.getElementById("whatsapp");
+    const textourl = encodeURI("Olá, gostaria de fazer o pedido:" + "\n" + "- " + "prato:  " + nomeprato + "\n" + "- " + "bebida:  " + nomebebida + "\n" + "- " + "sobremesa:  " + nomesobremesa + "\n" + "Valor final: " + " R$" + resultado);
+    const mensagem = "https://wa.me/+5521967858482?" + "text=" + textourl;
+    link.setAttribute('href', mensagem);
+    alert(mensagem);
 }

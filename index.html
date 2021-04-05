@@ -27,7 +27,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/frango.jpg" class="foto-opcao" alt="fotoprato">
-                    <h3>Frango Yin Yang</h3>
+                    <h3 id="nome1">Frango Yin Yang</h3>
                     <p>Um pouco de batata, um pouco de salada</p>
                     <h4>
                         <div>R$: <span id="preco1">14.90</span></div>
@@ -40,7 +40,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/lasanha.jpg" class="foto-opcao" alt="">
-                    <h3>Lasanha Bolonhesa</h3>
+                    <h3 id="nome2">Lasanha Bolonhesa</h3>
                     <p>Bastante recheio, queijo delicioso</p>
                     <h4>
                         <div>R$: <span id="preco2">23.90</span></div>
@@ -53,7 +53,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/fritada.jpg" class="foto-opcao" alt="">
-                    <h3>Fritada de presunto</h3>
+                    <h3 id="nome3">Fritada de presunto</h3>
                     <p>Feita no azeite com bastante recheio</p>
                     <h4>
                         <div>R$: <span id="preco3">18.90</span></div>
@@ -66,7 +66,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/pene-atum.jpg" class="foto-opcao" alt="">
-                    <h3>Pene de atum</h3>
+                    <h3 id="nome4">Pene de atum</h3>
                     <p>Massa artesanal, atum fresco</p>
                     <h4>
                         <div>R$: <span id="preco4">21.90</span></div>
@@ -79,7 +79,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/arroz-colorido.jpg" class="foto-opcao" alt="">
-                    <h3>Arroz colorido</h3>
+                    <h3 id="nome5">Arroz colorido</h3>
                     <p>Incrivel arroz de forno do cheff</p>
                     <h4>
                         <div>R$: <span id="preco5">16.90</span></div>
@@ -92,7 +92,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/almondegas.jpg" class="foto-opcao" alt="">
-                    <h3>Almôndegas </h3>
+                    <h3 id="nome6">Almôndegas </h3>
                     <p>Melhores carnes e queijos unidos</p>
                     <h4>
                         <div>R$: <span id="preco6">25.90</span></div>
@@ -112,7 +112,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/coquinha.jpg" class="foto-opcao" alt="">
-                    <h3>Coca-cola gelada</h3>
+                    <h3 id="nome7">Coca-cola gelada</h3>
                     <p>Lata 350ml</p>
                     <h4>
                         <div>R$: <span id="preco7">4.90</span></div>
@@ -125,7 +125,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/guarana.jpg" class="foto-opcao" alt="">
-                    <h3>Guaraná gelado</h3>
+                    <h3 id="nome8">Guaraná gelado</h3>
                     <p>Lata 350ml</p>
                     <h4>
                         <div>R$: <span id="preco8">4.50</span></div>
@@ -138,7 +138,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/suco.jpg" class="foto-opcao" alt="">
-                    <h3>Sucos naturais</h3>
+                    <h3 id="nome9">Sucos naturais</h3>
                     <p>copo 400 ml</p>
                     <h4>
                         <div>R$: <span id="preco9">6.00</span></div>
@@ -151,7 +151,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/agua.jpg" class="foto-opcao" alt="">
-                    <h3>Agua mineral</h3>
+                    <h3 id="nome10">Agua mineral</h3>
                     <p>500 ml c/ ou s/ gás</p>
                     <h4>
                         <div>R$: <span id="preco10">2.00</span></div>
@@ -170,7 +170,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/pudim.jpg" class="foto-opcao" alt="">
-                    <h3>Pudim de leite</h3>
+                    <h3 id="nome11">Pudim de leite</h3>
                     <p>tradicional pudim de leite da casa</p>
                     <h4>
                         <div>R$: <span id="preco11">7.90</span></div>
@@ -183,7 +183,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/brigadeiro.jpg" class="foto-opcao" alt="">
-                    <h3>Brigadeiro</h3>
+                    <h3 id="nome12">Brigadeiro</h3>
                     <p>50g do melhor brigadeiro do mundo</p>
                     <h4>
                         <div>R$: <span id="preco12">4.00</span></div>
@@ -196,7 +196,7 @@
                 <div class="conteudoprato">
 
                     <img src="imagens/tortadelimao.jpg" class="foto-opcao" alt="">
-                    <h3>Torta de limão</h3>
+                    <h3 id="nome13">Torta de limão</h3>
                     <p>Massa de biscoito, recheio de felicidade</p>
                     <h4>
                         <div>R$: <span id="preco13">8.90</span></div>
@@ -213,9 +213,14 @@
         <div class="finalizarcinza">
             <div>selecione os 3 itens para finalizar o pedido</div>
         </div>
-        <div class="finalizarverde" onclick="pedir()">
-            <div> Fechar pedido</div>
+
+        <div class="finalizarverde" onclick="mudarlink()">
+            <a href="" id="whatsapp">
+
+                <div> Fechar pedido</div>
+            </a>
         </div>
+
 
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
